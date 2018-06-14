@@ -1,0 +1,6 @@
+﻿{
+  "/api": {
+    "target": "https://udem.herokuapp.com",
+    "secure": true
+  }
+}
