@@ -23,4 +23,8 @@ export class HeroComponent {
         });
     }
 
+    private onClickRegresar() { 
+        this.router.navigateByUrl('heroes');
+    }
+
 }

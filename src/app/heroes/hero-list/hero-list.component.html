@@ -1,9 +1,19 @@
 ﻿<div class="flex-container">
     <div *ngFor="let hero of heroesList | async; let i = index" (click)="openHeroData(hero)">
-        <div class="imgContainer">
+        <div class="img-container">
             <img src="{{hero._picture}}" alt="{{hero._name}} pic">
             <span>{{returnNumberTh(i+1)}}</span>
         </div>
-        {{footsToMeters(hero._height).toString() + mt }} {{hero._name}} {{hero._nickname}}
+        <div class="description-container">
+            <h2>
+                {{hero._nickname}}
+            </h2>
+            <p>
+                {{hero._name}}
+            </p>
+            <p>
+                Estatura: {{footsToMeters(hero._height).toString() + 'mt' }}
+            </p>
+        </div>
     </div>
 </div>

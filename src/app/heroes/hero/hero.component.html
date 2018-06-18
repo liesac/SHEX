@@ -1,7 +1,23 @@
-﻿<div>
-    <h1>{{currentHeroe._name}}</h1>
-    <input [(ngModel)]="currentHeroe._height">
-    <input [(ngModel)]="currentHeroe._name">
-    <input [(ngModel)]="currentHeroe._nickname">
-    <input [(ngModel)]="currentHeroe._picture">
+﻿<div class="hero-detail">
+    <h1>{{currentHeroe._nickname}}</h1>
+    <img src="{{currentHeroe._picture}}" alt="{{currentHeroe._name}} pic">
+    <div>
+        <label for="height">Hero Height in feets</label>
+        <input id="height" [(ngModel)]="currentHeroe._height">
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" [(ngModel)]="currentHeroe._name">
+    </div>
+    <div>
+        <label for="nickName">Nick Name</label>
+        <input id="nickName" [(ngModel)]="currentHeroe._nickname">
+    </div>
+    <div>
+        <label for="imgUrl">Picture URL</label>
+        <input id="imgUrl" [(ngModel)]="currentHeroe._picture">
+    </div>
+    <div>
+        <button (click)="onClickRegresar()">Regresar</button>
+    </div>
 </div>
