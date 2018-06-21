@@ -65,7 +65,6 @@ export class HeroListComponent {
     }
 
     private footsToMeters(foots: number): number {
-        console.log('saddads', foots, foots * 0.3048);
         return Math.round((foots * 0.3048) * 100)/100;
     }
 }
